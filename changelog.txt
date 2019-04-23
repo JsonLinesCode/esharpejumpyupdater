@@ -1,0 +1,67 @@
+﻿##V2.4
+Support complet des thèmes, choix depuis le menu du jeu
+##V2.3 Noël
+Nouveau menu au démarrage du jeu, avec possibilité de voir les crédits et de se rendre sur le site internet.
+Toujours avec une prise en charge partielle des thèmes (Noël uniquement)
+Thèmes inclus : noel.jyt
+##V2.2 Noël
+Prise en charge partielle des thèmes (Noël uniquement)
+Thèmes inclus : noel.jyt
+##V2.1
+Ajoute une boîte de dialogue pour simplifier l'écran d'accueil :
+* Liste des commandes de jeu
+* Crédits
+* Liens du site et du Discord
+##V2.0
+Migration de SDL 1.2 vers SDL 2.0.9
+Affichage du score et du meilleur score à zéro lors du démarrage
+##V1.17
+Améliore le déplacement de la tour après 40 points
+Autorise la touche entrée du pavé num. pour valider l'avion
+Améliore la méthode de déplacement de l'avion pour mieux gérer les ressources du PC
+L'avion met enfin le turbo au lancement du jeu !
+##V1.16.1
+Bug fix : L'avion peut maintenant aller aussi rapidement qu'avant
+##V1.16
+Agrandit la fenêtre pour y placer le dessin de @Mastral (aéroport). Crée un dossier 'ressources' pour ne pas encombrer la racine du zip.
+##V1.15
+Remplace le favicon défectueux par celui de @Mastral
+##V1.14
+Ajoute le fond ciel bleu de @Mastral
+##V1.13
+Affiche le score et le meilleur score quand le joueur perd
+##V1.12
+Ajoute la tour de contrôle dessinée par @Mastral
+##V1.11
+L'utilisateur peut maintenant choisir le nombre de vies au début de la partie
+##V1.10
+Affiche les instructions au début du jeu
+##V1.9
+Remplace le bloc par un avion dessiné par @Modern
+##V1.8
+Ajoute un système de vies activé ou non par l'utilisateur
+##V1.7
+Ajoute une texture d'herbe
+##V1.6
+Ajoute une icone à l'application (fonctionne mal)
+##V1.5
+Ajoute l'affichage du meilleur score
+##V1.4.1
+Bug fix : comportements imprévisibles à cause d'une erreur dans le code
+##V1.4
+Ajoute le déplacement du perso. après 40 points. Il va de plus en plus vite. Quand sa vitesse devient équivalente à la taille de l'écran il se positionne aléatoirement à chaque tour.
+##V1.3
+Le joueur perd maintenant un point si il rate le bloc. Le bloc ralentit si le joueur repasse en dessous d'un palier.
+##V1.2
+Ajoute un compteur de points visible de l'utilisateur
+##V1.1.1
+Bug fix : le bloc ne peut plus devenir rouge une fois qu'il est devenu vert
+##V1.1
+Ajoute la fonctionnalité du bloc rouge pour éviter les tricheries
+##V1.0
+Le bloc accélère en fonction des points du joueur.
+Ces points ne sont pas affichés.
+##V1.02
+Variante de Jumpy 1.17 avec des graphismes en pixel art réalisés par @Mastral.
+##V1.01
+Toute première version de Jumpy (V0)
