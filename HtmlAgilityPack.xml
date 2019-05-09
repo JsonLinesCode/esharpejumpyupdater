@@ -436,6 +436,12 @@
             Defines if empty nodes must be written as closed during output. Default is false.
             </summary>
         </member>
+        <member name="F:HtmlAgilityPack.HtmlDocument.OptionMaxNestedChildNodes">
+            <summary>
+            The max number of nested child nodes. 
+            Added to prevent stackoverflow problem when a page has tens of thousands of opening html tags with no closing tags 
+            </summary>
+        </member>
         <member name="M:HtmlAgilityPack.HtmlDocument.#ctor">
             <summary>
             Creates an instance of an HTML document.
@@ -1015,6 +1021,11 @@
             Gets a valid XPath string that points to this node
             </summary>
         </member>
+        <member name="P:HtmlAgilityPack.HtmlNode.Depth">
+            <summary>
+            The depth of the node relative to the opening root html element. This value is used to determine if a document has to many nested html nodes which can cause stack overflows
+            </summary>
+        </member>
         <member name="M:HtmlAgilityPack.HtmlNode.CanOverlapElement(System.String)">
             <summary>
             Determines if an element node can be kept overlapped.
@@ -1341,6 +1352,11 @@
             Saves the current node to a string.
             </summary>
             <returns>The saved string.</returns>
+        </member>
+        <member name="M:HtmlAgilityPack.HtmlNode.SetParent(HtmlAgilityPack.HtmlNode)">
+            <summary>
+            Sets the parent Html node and properly determines the current node's depth using the parent node's depth.
+            </summary>
         </member>
         <member name="M:HtmlAgilityPack.HtmlNode.AddClass(System.String)">
             <summary>
@@ -2606,40 +2622,6 @@
             <param name="xsltArgs">An XsltArgumentList containing the namespace-qualified arguments used as input to the transform.</param>
             <param name="writer">The XmlTextWriter to which you want to save.</param>
             <param name="xmlPath">A file path where the temporary XML before transformation will be saved. Mostly used for debugging purposes.</param>
-        </member>
-        <member name="T:HtmlAgilityPack.PermissionHelper">
-            <summary>
-            Wraps getting AppDomain permissions
-            </summary>
-        </member>
-        <member name="M:HtmlAgilityPack.PermissionHelper.GetIsRegistryAvailable">
-            <summary>
-            Checks to see if Registry access is available to the caller
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:HtmlAgilityPack.PermissionHelper.GetIsDnsAvailable">
-            <summary>
-            Checks to see if DNS information is available to the caller
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="T:HtmlAgilityPack.IPermissionHelper">
-            <summary>
-            An interface for getting permissions of the running application
-            </summary>
-        </member>
-        <member name="M:HtmlAgilityPack.IPermissionHelper.GetIsRegistryAvailable">
-            <summary>
-            Checks to see if Registry access is available to the caller
-            </summary>
-            <returns></returns>
-        </member>
-        <member name="M:HtmlAgilityPack.IPermissionHelper.GetIsDnsAvailable">
-            <summary>
-            Checks to see if DNS information is available to the caller
-            </summary>
-            <returns></returns>
         </member>
         <member name="T:HtmlAgilityPack.HtmlWebException">
             <summary>

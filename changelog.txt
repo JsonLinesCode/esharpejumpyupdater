@@ -1,4 +1,10 @@
-﻿##V2.4
+﻿##V2.5.1
+Bug fix : Crash du lanceur lors d'un clic sur valider sans séléctionner de thème
+##V2.5
+Affiche le score et le meilleur score quand le joueur perd (au lieu de zéro)
+Le jeu est maintenant fourni sans thèmes, vous pouvez les installer depuis l'updater.
+Ceci n'est pas un doublon de la V1.13
+##V2.4
 Support complet des thèmes, choix depuis le menu du jeu
 ##V2.3 Noël
 Nouveau menu au démarrage du jeu, avec possibilité de voir les crédits et de se rendre sur le site internet.
