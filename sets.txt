@@ -1,4 +1,5 @@
-True
 False
 False
-http://jumpy.taokann.one/historique/
+False
+http://taokann.one/pages/jumpy/historique/
+http://taokann.one/pages/jumpy/themes/
